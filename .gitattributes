@@ -1,0 +1,44 @@
+# LFS 설정
+*.fbx filter=lfs diff=lfs merge=lfs binary
+*.dae filter=lfs diff=lfs merge=lfs binary
+*.png filter=lfs diff=lfs merge=lfs binary
+*.jpg filter=lfs diff=lfs merge=lfs binary
+*.jpeg filter=lfs diff=lfs merge=lfs binary
+*.tif filter=lfs diff=lfs merge=lfs binary
+*.exr filter=lfs diff=lfs merge=lfs binary
+*.blend filter=lfs diff=lfs merge=lfs binary
+*.pdf filter=lfs diff=lfs merge=lfs binary
+*.psd filter=lfs diff=lfs merge=lfs binary
+*.dll filter=lfs diff=lfs merge=lfs binary
+*.so filter=lfs diff=lfs merge=lfs binary
+*.tgz filter=lfs diff=lfs merge=lfs binary
+*.glb filter=lfs diff=lfs merge=lfs -text
+
+# WebGL 빌드 관련 파일 추가
+*.wasm filter=lfs diff=lfs merge=lfs binary
+*.data filter=lfs diff=lfs merge=lfs binary
+*.mem filter=lfs diff=lfs merge=lfs binary
+
+# 텍스트 파일 (CRLF 방지, LF 강제)
+*.cs text eol=lf
+*.shader text eol=lf
+*.cginc text eol=lf
+*.compute text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.csv text eol=lf
+
+# Unity 관련 바이너리 파일 (자동 변환 방지)
+*.prefab binary
+*.unity filter=lfs diff=lfs merge=lfs binary
+*.asset binary
+*.mat binary
+*.meta binary
